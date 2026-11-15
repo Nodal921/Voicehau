@@ -5,6 +5,8 @@ the current line is cut off and the new one starts right away. Other players hea
 
 There is no code injection and the game executable is not modified.
 
+**Voice spam can get you banned or kicked by admins/devs**. Use it with taste.
+
 ## Install
 
 1. Install the [Clientside Mod Autoloader](https://mordhau.mod.io/clientside-mod-autoloader)
@@ -37,10 +39,6 @@ Numpad 0 works with any voiceline: pick one from Mordhau's own voice menus, then
 spam Numpad 0 to repeat it.
 
 Voicehau always plays the first variation of each voiceline, so repeats sound the same.
-
-## Notes
-
-- **Voice spam can get you banned or kicked by admins/devs**. Use it with taste.
 
 ## What the installer does
 
