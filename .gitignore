@@ -1,0 +1,4 @@
+# The built mod is shipped in the release zip, not in the repository
+*.pak
+dist/
+*.zip
