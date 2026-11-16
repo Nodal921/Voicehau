@@ -139,6 +139,6 @@ if ($changed) {
 Write-Host ''
 Write-Host "  $ModName is installed." -ForegroundColor Green
 Write-Host '  Start Mordhau: the autoloader mod list should show Voicehau at startup.'
-Write-Host '  Keys: numpad 1-9 = voicelines, numpad 0 = repeat the last one (see README.md).'
+Write-Host '  Keys: numpad 1-9 = pick a variation, numpad 0 = replay the last voiceline (see README.md).'
 Write-Host ''
 exit 0

@@ -20,27 +20,25 @@ To remove it, double-click **`Uninstall Voicehau.bat`**.
 
 ## Controls
 
-| Key | Voiceline |
+1. Play any voiceline from Mordhau's own voice menus. Voicehau remembers it.
+2. Press **Numpad 1 to 9** to pick a variation (1 = first variation). The chat confirms it.
+3. Spam **Numpad 0** to replay that voiceline with that variation. Each press cuts off the
+   previous one.
+
+| Key | Action |
 |---|---|
-| Numpad 1 | Laugh |
-| Numpad 2 | Battlecry |
-| Numpad 3 | Yes |
-| Numpad 4 | No |
-| Numpad 5 | Thanks |
-| Numpad 6 | Sorry |
-| Numpad 7 | Insult |
-| Numpad 8 | Help |
-| Numpad 9 | Retreat |
-| **Numpad 0** | Repeat the last voiceline you played |
-
-Numpad 0 works with any voiceline: pick one from Mordhau's own voice menus, then
-spam Numpad 0 to repeat it.
-
-Voicehau always plays the first variation of each voiceline, so repeats sound the same.
+| Numpad 1-9 | Pick variation 1 to 9 |
+| **Numpad 0** | Play the last voiceline with the picked variation |
 
 ## Notes
 
 - **Voice spam can get you banned or kicked by admins/devs**. Use it with taste.
+- Voicelines don't all have the same number of variations. If the picked one doesn't
+  exist, the chat says so and nothing plays.
+- When you replay the same variation twice in a row, other players briefly hear another
+  variation (about 0.1 s) before the right one. That's how the game's network code works:
+  it only sends a voiceline to others when it changes.
+- Before you play any voiceline, Numpad 0 plays "Yes".
 
 ## What the installer does
 
@@ -65,4 +63,3 @@ Mordhau is a trademark of Triternion. This project is not affiliated with or end
 ## License
 
 [MIT](LICENSE)
-# Voicehau
