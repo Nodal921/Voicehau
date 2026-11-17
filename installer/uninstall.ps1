@@ -53,6 +53,27 @@ if (Test-Path -LiteralPath $GameIni) {
     Write-Warn2 "Game.ini not found: $GameIni"
 }
 
+Write-Step 'Removing the Voicehau keys from Input.ini'
+$InputIni = Join-Path (Split-Path -Parent $GameIni) 'Input.ini'
+if (Test-Path -LiteralPath $InputIni) {
+    $lines = Read-IniLines $InputIni
+    $before = $lines.Count
+    $lines.RemoveAll([Predicate[string]]{ param($l) $l.TrimStart().StartsWith('ActionMappings=(ActionName="Voicehau ') }) | Out-Null
+    if ($lines.Count -ne $before) {
+        if (-not $DryRun) {
+            $bak = Backup-File $InputIni
+            Write-IniLines $InputIni $lines
+            Write-Ok "$($before - $lines.Count) key line(s) removed (backup: $bak)"
+        } else {
+            Write-Ok "DryRun: $($before - $lines.Count) key line(s) would be removed"
+        }
+    } else {
+        Write-Ok 'Nothing to remove'
+    }
+} else {
+    Write-Ok 'No Input.ini'
+}
+
 Write-Host ''
 Write-Host "  $ModName is uninstalled." -ForegroundColor Green
 Write-Host ''

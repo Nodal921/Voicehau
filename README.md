@@ -16,7 +16,8 @@ There is no code injection and the game executable is not modified.
 5. Start Mordhau. Voicehau should appear in the autoloader mod list, and the chat shows
    a "loaded" message once you are in a match.
 
-To remove it, double-click **`Uninstall Voicehau.bat`**.
+To remove it, double-click **`Uninstall Voicehau.bat`**. It also removes the Voicehau keys
+from Mordhau's key settings.
 
 ## Controls
 
@@ -25,10 +26,21 @@ To remove it, double-click **`Uninstall Voicehau.bat`**.
 3. Spam **Numpad 0** to replay that voiceline with that variation. Each press cuts off the
    previous one.
 
-| Key | Action |
+All these keys can be changed in the game's settings (see below).
+
+| Default key | Action |
 |---|---|
 | Numpad 1-9 | Pick variation 1 to 9 |
 | **Numpad 0** | Play the last voiceline with the picked variation |
+
+### Changing the keys (no numpad?)
+
+The keys are listed in Mordhau's own menu: **Settings > Action Bindings**, at the very bottom
+(`Voicehau Variation 1` to `9` and `Voicehau Replay`). Click a key, press the new one, then
+**Apply**. Voicehau must be installed and loaded for these lines to show up.
+
+If a Voicehau action ends up with no key at all (for example after Mordhau's "Reset to Default"),
+Voicehau puts its numpad key back.
 
 ## Notes
 
@@ -38,7 +50,9 @@ To remove it, double-click **`Uninstall Voicehau.bat`**.
 - When you replay the same variation twice in a row, other players briefly hear another
   variation (about 0.1 s) before the right one. That's how the game's network code works:
   it only sends a voiceline to others when it changes.
-- Before you play any voiceline, Numpad 0 plays "Yes".
+- Before you play any voiceline, the replay key plays "Yes".
+- The keys are read without blocking the game: if you bind a Voicehau action to a key the game
+  already uses, both happen. Mordhau warns you about that when you bind it.
 
 ## What the installer does
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.8
+
+- **Rebindable keys.** The ten Voicehau keys now show up at the bottom of Mordhau's
+  **Settings > Action Bindings** menu (`Voicehau Variation 1` to `9`, `Voicehau Replay`), so
+  players without a numpad can pick other keys. Numpad 1-9 and Numpad 0 stay the defaults.
+- The keys no longer block the game's own actions bound to the same key.
+- The uninstaller also removes the Voicehau keys from `Input.ini`.
+
 ## v1.7
 
 - **Pick the variation.** Numpad 1-9 now picks a variation, and Numpad 0 replays the last voiceline
