@@ -47,12 +47,6 @@ Voicehau puts its numpad key back.
 - **Voice spam can get you banned or kicked by admins/devs**. Use it with taste.
 - Voicelines don't all have the same number of variations. If the picked one doesn't
   exist, the chat says so and nothing plays.
-- When you replay the same variation twice in a row, other players briefly hear another
-  variation (about 0.1 s) before the right one. That's how the game's network code works:
-  it only sends a voiceline to others when it changes.
-- Before you play any voiceline, the replay key plays "Yes".
-- The keys are read without blocking the game: if you bind a Voicehau action to a key the game
-  already uses, both happen. Mordhau warns you about that when you bind it.
 
 ## What the installer does
 
